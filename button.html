@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="text">안녕!</p>
+        <button id="mybtn">눌러봐</button>
+        <script>
+            let count = 0;
+            const btn = document.getElementById("mybtn");
+            btn.addEventListener("click",()=>{
+                count++;
+                document.getElementById("text").textContent =count+"번 눌렀다!";
+            })
+        </script>
+    </body>
+</html>
